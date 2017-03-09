@@ -1,0 +1,11 @@
+rootProject.name = 'MisDMusicPlayer'
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+include ':react-native-sound'
+project(':react-native-sound').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sound/android')
+include ':music-files'
+project(':music-files').projectDir = new File(rootProject.projectDir, '../src/nativeModules/music-files/android')
+include ':music-control'
+project(':music-control').projectDir = new File(rootProject.projectDir, '../src/nativeModules/music-control/android')
+
+include ':app'
